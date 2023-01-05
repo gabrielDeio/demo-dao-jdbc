@@ -49,9 +49,15 @@ public class Program {
         Department dep3 = new Department(5, "Manufactory");
         departmentDao.insert(dep3);
         System.out.println("Department inserted!");
-        */
+
         System.out.println("\n=== TEST 8: Department findById =====");
         Department dep4 =  departmentDao.findById(5);
         System.out.println(dep4);
+        */
+        System.out.println("\n=== TEST 9: Department update =====");
+        Department dep5 = departmentDao.findById(5);
+        dep5.setName("Financial");
+        departmentDao.update(dep5);
+        System.out.println("Update completed!");
     }
 }
