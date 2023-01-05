@@ -31,11 +31,15 @@ public class Program {
         System.out.println(seller2);
         sellerDao.insert(seller2);
         System.out.println("Inserted! New id = " + seller2.getId());
-        */
+
         System.out.println("\n=== TEST 5: seller update =====");
         Seller seller3 = sellerDao.findById(8);
         seller3.setName("Gabriel Deió");
         sellerDao.update(seller3);
         System.out.println("Update completed");
+        */
+        System.out.println("\n=== TEST 6: seller delete =====");
+        sellerDao.deleteById(8);
+        System.out.println("Seller deleted!");
     }
 }
