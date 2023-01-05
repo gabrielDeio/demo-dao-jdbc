@@ -59,11 +59,17 @@ public class Program {
         dep5.setName("Financial");
         departmentDao.update(dep5);
         System.out.println("Update completed!");
-        */
+
 
         System.out.println("\n=== TEST 10: Department findAll =====");
         List<Department> list2 = departmentDao.findAll();
         System.out.println(list2);
+        */
+
+        System.out.println("\n=== TEST 7: Department insert =====");
+        Department dep3 = new Department(null, "Manufactory");
+        departmentDao.insert(dep3);
+        System.out.println("Department inserted!");
 
     }
 }
