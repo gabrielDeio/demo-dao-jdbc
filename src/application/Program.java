@@ -44,10 +44,14 @@ public class Program {
         System.out.println("\n=== TEST 6: seller delete =====");
         sellerDao.deleteById(8);
         System.out.println("Seller deleted!");
-        */
+
         System.out.println("\n=== TEST 7: Department insert =====");
         Department dep3 = new Department(5, "Manufactory");
         departmentDao.insert(dep3);
         System.out.println("Department inserted!");
+        */
+        System.out.println("\n=== TEST 8: Department findById =====");
+        Department dep4 =  departmentDao.findById(5);
+        System.out.println(dep4);
     }
 }
